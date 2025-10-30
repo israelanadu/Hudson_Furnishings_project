@@ -1,13 +1,1873 @@
-body {
+* {
+  font-family: "Poppins", sans-serif;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  text-decoration: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*::-webkit-scrollbar {
+
+  width: 4px;
+  border-radius: 3px;
+  background-color: rgb(240, 242, 245);
+
+}
+
+*::-webkit-scrollbar:hover {
+  width: 4px;
+  border-radius: 3px;
+  background-color: rgb(241, 243, 246);
+}
+
+*::-webkit-scrollbar-thumb {
+  /* background-color: #888; */
+  background-color: #C1C3C7;
+  border-radius: 3px;
+}
+
+button {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+
+header {
+  width: 100%;
+  height: 60px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  position: fixed;
+  top: 0px;
+  z-index: 100;
+  
+}
+
+
+header div.header_container {
+  width: 90%;
+  height: 50px;
+  overflow: hidden;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+   /* z-index: 1000; */
+}
+
+header div.header_container section.header_cover {
+  width: auto;
+  height: auto;
+  list-style: none;
+  align-items: center;
+  display: flex;
+  gap: 20px;
+  font-size: 15px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+}
+header div.header_container section.header_cover img{
+  height: 50px;
+}
+
+header div.header_container section.header_cover li {
+  padding: 5px 15px;
+  border-radius: 10px;
+  color: rgba(0, 0, 0, 0.8);
+  transition: all 0.3s ease-in-out;
+}
+header div.header_container section.header_cover a.active li{
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 17px;
+}
+header div.header_container section.header_cover li:hover{
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 17px;
+}
+
+
+
+header div.header_container section.header_cover h1.logo {
+  font-size: 20px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+header div.header_container section.header_cover h1.logo span {
+  font-weight: 700;
+  color: rgb(31, 107, 217);
+  font-size: 30px;
+}
+
+header div.header_container section.header_cover button {
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.8);
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+header div.header_container section.header_cover button span {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+div.landing_front_container {
+  width: 100%;
+  height: auto;
+  /* border-bottom: 1px solid red;
+  border-top: 1px solid red; */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+
+div.landing_front_container div.landing_front_cover {
+  width: 90%;
+  height: auto;
+  padding: 50px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  overflow: hidden;
+}
+
+div.landing_front_container div.landing_front_cover section.landing_front_content {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+div.landing_front_container div.landing_front_cover section.landing_front_content h1 {
+  font-size: 60px;
+  line-height: 90px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.8);
+  width: 800px;
+  text-align: center;
+}
+
+div.landing_front_container div.landing_front_cover section.landing_front_content h1 span {
+  color: rgb(31, 107, 217);
+}
+
+
+
+div.landing_front_container div.landing_front_cover section.landing_front_sample {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  height: auto;
+}
+
+div.landing_front_container div.landing_front_cover section.landing_front_sample div.landing_main_sample {
+  width: calc(100% - 300px);
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-radius: 50px;
+  position: relative;
+}
+
+div.landing_front_container div.landing_front_cover section.landing_front_sample div.landing_main_sample div.landing_sample_image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 50px;
+  background-color: rgba(125, 125, 125, 0.1);
+  z-index: 1;
+}
+
+div.landing_front_container div.landing_front_cover section.landing_front_sample div.landing_main_sample div.landing_sample_image img {
+  width: 100%;
+}
+
+div.landing_front_container div.landing_front_cover section.landing_front_sample div.landing_main_sample div.sample_button_contain {
+  width: 190px;
+  height: 80px;
+  z-index: 2;
+  background-color: white;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* top: 0px; */
+}
+
+div.landing_front_container div.landing_front_cover section.landing_front_sample div.landing_main_sample div.sample_button_contain.left {
+  top: 0px;
+  left: 0px;
+  border-radius: 0px 0px 20px 0px;
+  display: none;
+}
+
+div.landing_front_container div.landing_front_cover section.landing_front_sample div.landing_main_sample div.sample_button_contain.right {
+  bottom: 0px;
+  right: 0px;
+  border-radius: 35px 0px 0px 0px;
+}
+
+div.landing_front_container div.landing_front_cover section.landing_front_sample div.landing_main_sample div.sample_button_contain div.button_cover {
+  width: calc(90% - 15px);
+  height: 50px;
+  border-radius: 40px;
+  background-color: rgb(31, 31, 31);
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  /* gap: 10px; */
+  padding: 0px 6px;
+}
+
+div.landing_front_container div.landing_front_cover section.landing_front_sample div.landing_main_sample div.sample_button_contain div.button_cover button {
+  width: 42px;
+  height: 42px;
+  background-color: white;
+  border: none;
+  border-radius: 40px;
+  color: rgb(31, 31, 31);
+  font-size: 17px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+}
+
+div.landing_front_container div.landing_front_cover section.landing_front_sample div.landing_main_sample div.sample_button_contain div.button_cover p {
+  width: calc(100% - 60px);
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+}
+
+
+
+
+
+div.landing_front_container div.landing_front_cover section.landing_front_sample div.landing_sub_sample {
+  width: 300px;
+  height: 500px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+div.landing_front_container div.landing_front_cover section.landing_front_sample div.landing_sub_sample section.sample_card_container {
+  width: calc(100% - 2px);
+  height: 240px;
+  flex-direction: column;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+div.landing_front_container div.landing_front_cover section.landing_front_sample div.landing_sub_sample section.sample_card_container div.image_contain {
+  width: 100%;
+  height: 190px;
+  border-radius: 20px;
+  background-color: rgba(125, 125, 125, 0.1);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.landing_front_container div.landing_front_cover section.landing_front_sample div.landing_sub_sample section.sample_card_container div.image_contain img{
+  width: 100%;
+}
+
+
+div.landing_front_container div.landing_front_cover section.landing_front_sample div.landing_sub_sample section.sample_card_container div.content_contain {
+  width: 90%;
+  height: 50px;
+  /* overflow: hidden; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+div.landing_front_container div.landing_front_cover section.landing_front_sample div.landing_sub_sample section.sample_card_container div.content_contain div.info_container {
+  width: calc(100% - 90px);
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+div.landing_front_container div.landing_front_cover section.landing_front_sample div.landing_sub_sample section.sample_card_container div.content_contain div.info_container h3 {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: auto;
+  font-size: 15px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+section.sample_card_container div.content_contain div.card_rate {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  height: auto;
+  padding: 0px;
+}
+
+section.sample_card_container div.content_contain div.card_rate li {
+  color: #F2C94C;
+  font-size: 15px;
+}
+
+
+div.card_container div.card_writeup div.quantity_button {
+  width: 100%;
+  height: auto;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  gap: 10px;
+}
+
+div.card_container div.card_writeup div.quantity_button button {
+  width: 35px;
+  height: 35px;
+  overflow: hidden;
+  background-color: #5B6C82;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 17px;
+
+}
+
+div.card_container div.card_writeup div.quantity_button button.gold {
+  background-color: #F2C94C;
+}
+
+div.card_container div.card_writeup div.quantity_button section.amount {
+  padding: 10px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+
+
+
+
+
+div.landing_front_container div.landing_front_cover section.landing_front_sample div.landing_sub_sample section.sample_card_container div.content_contain h4.amount {
+  width: 90px;
+  height: auto;
+  overflow: hidden;
+  font-size: 17px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.8);
+  text-align: right;
+}
+
+
+
+/* div.s-curve-left-element-cropped {
+  width: 250px;
+  height: 100px;
+  background-color: #3b5998;
+  position: relative;
+  z-index: 1;
+  border-radius: 20px;
+}
+
+
+div.s-curve-left-element-cropped::before {
+  content: "";
+  position: absolute;
+  top: 70px;
+  left: -25px;
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  clip-path: path("M 0 0 L 0 -40 C 75 30, 40 20, 0 50 L 50 50 L 50 0 Z");
+  z-index: 2;
+}
+div.s-curve-left-element-cropped::after {
+  content: "";
+  position: absolute;
+  top: -28px;
+  right: -2px;
+  width: 25px;
+  height: 30px;
+  background-color: red;
+  clip-path: path("M 0 0 L 0 -40 C 55 20, 1 20, 0 50 L 50 50 L 50 0 Z");
+  /* clip-path: path("M 0 0 L 0 125 C 75 150, 25 250, 0 250 L 250 250 L 250 0 Z"); 
+  z-index: 3;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+div.landing_record_container{
+  padding: 50px 0px;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.landing_record_container div.landing_record_cover{
+  width: 90%;
+  justify-content: space-between;
+  align-items: stretch;
+  display: flex;
+  gap: 5%;
+  overflow: hidden;
+  height: auto;
+}
+div.landing_record_container div.landing_record_cover h3{
+  width: 30%;
+  height: auto;
+  line-height: 100px;
+  font-size: 60px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.8);
+  margin: 50px 0px;
+  text-align: center;
+}
+div.landing_record_container div.landing_record_cover h3 p{
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.6);
+  line-height: 25px;
+}
+
+
+
+
+
+
+
+
+div.landing_product_container{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  padding: 50px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.landing_product_container div.landing_product_cover{
+  width: 90%;
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  gap: 30px;
+}
+div.landing_product_container div.landing_product_cover h2{
+  width: 100%;
+  height: auto;
+  font-size: 60px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.8);
+  line-height: 100px;
+  text-align: center;
+}
+div.landing_product_container div.landing_product_cover nav.filter{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  
+}
+div.landing_product_container div.landing_product_cover nav.filter button{
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.8);
+  border: none;
+  border-radius: 20px;
+  background-color: rgba(125, 125, 125, 0.1);
+}
+div.landing_product_container div.landing_product_cover nav.filter button:hover{
+  background-color: rgb(31, 31, 31);
+  color: white;
+}
+
+div.landing_product_container div.landing_product_cover div.product_card_contain{
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* overflow: hidden; */
+  margin: 30px 0px;
+  gap: 5%;
+
+}
+div.landing_product_container div.landing_product_cover div.product_card_contain div.card_container{
+  height: auto;
+  flex-grow: 1;
+  overflow: hidden;
+  background-color: rgba(125, 125, 125, 0.1);
+  border-radius: 30px;
+  /* padding-bottom: 15px; */
+  display: flex;
+  flex-direction: column;
+}
+div.landing_product_container div.landing_product_cover div.product_card_contain div.card_container div.card_image{
+  width: 100%;
+  height: 200px;
+  /* min-height: 200px; */
+  /* background-color: rgba(125, 125, 125, 0.1); */
+  overflow: hidden;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.landing_product_container div.landing_product_cover div.product_card_contain div.card_container div.card_content{
+  width: 100%;
+  height: 60px;
+  display: block;
+}
+div.landing_product_container div.landing_product_cover div.product_card_contain div.card_container div.card_content div.card_info_arrange{
+  width: 100%;
+  height: 60px;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+div.landing_product_container div.landing_product_cover div.product_card_contain div.card_container div.card_content div.card_info{
+  width: calc(100% - 100px);
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px ;
+  height: auto;
+  display: flex;
+  gap: 10px;
+}
+
+div.landing_product_container div.landing_product_cover div.product_card_contain div.card_container div.card_content div.card_info h4{
+  font-size: 15px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.8);
+
+}
+div.landing_product_container div.landing_product_cover div.product_card_contain div.card_container div.card_content div.card_info h5{
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.7);
+  
+}
+
+
+
+
+
+
+div.landing_product_container div.landing_product_cover div.product_card_contain div.card_container div.card_content div.card_button{
+  width: 70px;
+  height: 60px;
+  background-color: white;
+  border-radius: 25px 0px 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.landing_product_container div.landing_product_cover div.product_card_contain div.card_container div.card_content div.card_button button{
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: rgb(31, 31, 31);
+  color: white;
+  border: none;
+  overflow: hidden;
+  font-size: 18px;
+  border-radius: 30px;
+}
+
+
+
+
+
+
+
+
+
+div.landing_about_container{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0px;
+}
+div.landing_about_container div.landing_about_cover{
+  width: 90%;
+  height: auto;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  overflow: hidden;
+  gap: 5%;
+}
+div.landing_about_container div.landing_about_cover section.about_image{
+  width: 45%;
+  height: 600px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: rgba(125, 125, 125, 0.1);
+  border-radius: 30px;
+  overflow: hidden;
+}
+div.landing_about_container div.landing_about_cover section.about_image img{
+  width: 100%;
+}
+
+
+
+
+div.landing_about_container div.landing_about_cover section.about_content{
+  width: 50%;
+  height: auto;
+  padding: 20px 0px;
+  flex-direction: column;
+  display: flex;
+  gap: 20px;
+}
+div.landing_about_container div.landing_about_cover section.about_content h2{
+  font-size: 50px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  line-height: 80px;
+}
+div.landing_about_container div.landing_about_cover section.about_content h2 span{
+  color: rgb(31, 107, 217);
+  font-size: 15px;
+}
+div.landing_about_container div.landing_about_cover section.about_content p{
+  font-size: 15px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  line-height: 30px;
+}
+div.landing_about_container div.landing_about_cover section.about_content li{
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  line-height: 30px;
+  height: auto;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+div.landing_about_container div.landing_about_cover section.about_content li svg{
+  font-size: 17px;
+  color: rgb(31, 107, 217);
+
+}
+div.landing_about_container div.landing_about_cover section.about_content li p{
+  font-size: 13px;
+}
+div.landing_about_container div.landing_about_cover section.about_content div.button{
+  width: 150px;
+  height: 50px;
+  overflow: hidden;
+  background-color: rgb(31, 31, 31);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding: 0px 5px;
+
+}
+div.landing_about_container div.landing_about_cover section.about_content div.button p{
+  width: calc(100% - 60px);
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+
+}
+div.landing_about_container div.landing_about_cover section.about_content div.button button{
+  width: 42px;
+  color: rgb(31, 31, 31);
+  font-size: 15px;
+  font-weight: 600;
+  background-color: white;
+  height: 42px;
+  border: none;
+  border-radius: 40px;
+
+}
+
+
+
+
+
+
+
+
+div.landing_advertise_container{
+  width: 100%;
+  height: auto;
+  padding: 50px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+div.landing_advertise_container div.landing_advertise_cover{
+  width: 90%;
+  height: 500px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+div.landing_advertise_container div.landing_advertise_cover img{
+  position: absolute;
+  top: 0px;
+  width: 120%;
+}
+div.landing_advertise_container div.landing_advertise_cover div.landing_advertise_content{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 30px;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  z-index: 2;
+}
+div.landing_advertise_container div.landing_advertise_cover div.landing_advertise_content div.advert_info{
+  width: 45%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  left: 5%;
+
+}
+div.landing_advertise_container div.landing_advertise_cover div.landing_advertise_content div.advert_info h3{
+  width: 100%;
+  font-size: 37px;
+  font-weight: 600;
+  color: white;
+  overflow: hidden;
+  line-height: 60px;
+}
+
+div.landing_advertise_container div.landing_advertise_cover div.landing_advertise_content div.advert_info button{
+  width: 180px;
+  padding: 15px 20px;
+  background-color: white;
+  color: rgb(31, 31, 31);
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;
+}
+
+
+div.landing_advertise_container div.landing_advertise_cover div.button_container{
+  width: 200px;
+  height: 70px;
+  border-radius: 0px 0px 0px 30px;
+  background-color: white;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.landing_advertise_container div.landing_advertise_cover div.button_container div.button_cover{
+  width: calc(90% - 20px);
+  height: 55px;
+  border-radius: 30px;
+  background-color: rgb(31, 31, 31);
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding: 0px 5px;
+}
+div.landing_advertise_container div.landing_advertise_cover div.button_container div.button_cover button{
+  font-size: 17px;
+  color: rgb(31, 31, 31);
+  background-color: white;
+  border: none;
+  border-radius: 30px;
+  width: 42px;
+  height: 42px;
+}
+div.landing_advertise_container div.landing_advertise_cover div.button_container div.button_cover p{
+  text-align: center;
+  color: white;
+  width: calc(100% - 42px);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+div.landing_subscribe_container{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0px;
+}
+div.landing_subscribe_container div.landing_subscribe_cover{
+  width: 90%;
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+div.landing_subscribe_container div.landing_subscribe_cover h2{
+  font-size: 40px;
+  width: 800px;
+  height: auto;
+  line-height: 80px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+div.landing_subscribe_container div.landing_subscribe_cover h2 span{
+  color: rgba(0, 0, 0, 0.9);
+  font-weight: 700;
+}
+div.landing_subscribe_container div.landing_subscribe_cover form{
+  width: 800px;
+  height: auto;
+  padding: 20px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+div.landing_subscribe_container div.landing_subscribe_cover form input{
+  width: calc(100% - 180px);
+  height: auto;
+  padding: 12.5px 20px;
+  font-size: 15px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(125, 125, 125, 0.1);
+  border: none;
+  outline: none;
+  border-radius: 30px;
+
+}
+div.landing_subscribe_container div.landing_subscribe_cover form button{
+  width: 120px;
+  height: auto;
+  padding: 12.5px 0px;
+  font-size: 15px;
+  font-weight: 600;
+  background-color: rgb(31, 31, 31);
+  border-radius: 30px;
+  color: white;
+  border: none;
+
+}
+
+
+
+
+
+
+
+footer{
+  width: 100%;
+  height: auto;
+  background-color: rgb(31, 31, 31);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 100px 0px;
+}
+
+footer div.footer_container{
+  width: 90%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 20px;
+  overflow: hidden;
+}
+footer div.footer_container.border{
+  border-top: 1px solid rgba(255, 255, 255, 0.7);
+}
+footer div.footer_container section.list_container{
+  width: calc(33% - 20px);
+  height: auto;
+  justify-content: space-between;
+  align-items: stretch;
+  display: flex;
+  gap: 30px;
+}
+footer div.footer_container section.list_container.center{
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+footer div.footer_container section.list_container.center img{
+ width: 80%;
+  height: auto; /* keeps aspect ratio */
+  object-fit: cover;
+}
+footer div.footer_container section.list_container div.list_cover{
+  list-style: none;
+  width: calc(50% - 15px);
+  height: auto;
+  line-height: 50px;
+
+}
+footer div.footer_container section.list_container div.list_cover li{
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.7);
+
+}
+footer div.footer_container section.list_container div.list_cover li.head{
+  font-size: 15px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+
+
+footer div.footer_container p{
+  font-size: 15px ;
+  font-weight: 600;
+  color: white;
+  padding: 20px 0px;
+}
+
+
+
+
+
+@media screen and (max-width:900px){
+  footer div.footer_container,div.landing_about_container div.landing_about_cover{flex-direction: column;}
+  footer div.footer_container section.list_container{width: 100%;}
+  footer div.footer_container p{width: 100%; text-align: center;}
+  div.landing_advertise_container div.landing_advertise_cover div.landing_advertise_content div.advert_info{width: 80%;}
+  div.landing_subscribe_container div.landing_subscribe_cover h2,div.landing_subscribe_container div.landing_subscribe_cover form{width: 100%;}
+  div.landing_about_container div.landing_about_cover section.about_content{width: 100%;order: 1;}
+  div.landing_about_container div.landing_about_cover section.about_image{width: 100%;order: 2; height: 400px;}
+  div.landing_product_container div.landing_product_cover div.product_card_contain{grid-template-columns: 1fr 1fr;}
+  div.landing_front_container div.landing_front_cover section.landing_front_sample{flex-direction: column;}
+  div.landing_front_container div.landing_front_cover section.landing_front_sample div.landing_sub_sample{flex-direction: unset;justify-content: center;align-items: center;width: 100%;height: auto;}
+  div.landing_front_container div.landing_front_cover section.landing_front_sample div.landing_main_sample{width: 100%;}
+  div.landing_front_container div.landing_front_cover section.landing_front_content h1{width: 100%;}
+}
+
+@media screen and (max-width:800px){
+  div.landing_front_container div.landing_front_cover section.landing_front_content h1{font-size: 40px;line-height: 60px;}
+  div.landing_front_container div.landing_front_cover section.landing_front_sample div.landing_main_sample{height: 400px;}
+  div.landing_record_container div.landing_record_cover h3,div.landing_product_container div.landing_product_cover h2{font-size: 40px;}
+  div.landing_record_container div.landing_record_cover h3 p{font-size: 9px;}
+  div.landing_about_container div.landing_about_cover section.about_content h2,div.landing_advertise_container div.landing_advertise_cover div.landing_advertise_content div.advert_info h3,
+  div.landing_subscribe_container div.landing_subscribe_cover h2{font-size: 30px;}
+  div.landing_about_container div.landing_about_cover section.about_content p{font-size: 13px;}
+  div.landing_about_container div.landing_about_cover section.about_content li{font-size: 10px;}
+  header div.header_container section.header_cover.menu{display: none;}
+}
+
+
+@media screen and (max-width:600px){
+  div.landing_record_container div.landing_record_cover{flex-direction: column;}
+  div.landing_record_container div.landing_record_cover h3{width: 100%;}
+  div.landing_front_container div.landing_front_cover section.landing_front_content h1{font-size: 30px;}
+  div.landing_front_container div.landing_front_cover section.landing_front_sample div.landing_main_sample{height: 300px;}
+  div.landing_product_container div.landing_product_cover h2{font-size: 30px;}
+  div.landing_product_container div.landing_product_cover nav.filter button{font-size: 10px;}
+  div.landing_subscribe_container div.landing_subscribe_cover h2,div.landing_advertise_container div.landing_advertise_cover div.landing_advertise_content div.advert_info h3{font-size: 23px;}
+  div.landing_product_container div.landing_product_cover div.product_card_contain div.card_container div.card_content div.card_info h4{font-size: 12px;}
+  div.landing_product_container div.landing_product_cover div.product_card_contain div.card_container div.card_content div.card_info h5{font-size: 10px;}
+  div.landing_product_container div.landing_product_cover div.product_card_contain div.card_container div.card_content div.card_button{width: 50px;}
+  div.landing_product_container div.landing_product_cover div.product_card_contain div.card_container div.card_content div.card_button button{width: 35px;height: 35px;}
+}
+@media screen and (max-width:500px){
+  div.landing_product_container div.landing_product_cover div.product_card_contain{grid-template-columns: 1fr;}
+  div.landing_product_container div.landing_product_cover nav.filter{display: grid;grid-template-columns: 1fr 1fr 1fr;}
+  div.landing_front_container div.landing_front_cover section.landing_front_content h1,div.landing_product_container div.landing_product_cover h2{font-size: 25px;line-height: 50px;}
+  div.landing_front_container div.landing_front_cover section.landing_front_sample div.landing_sub_sample{flex-direction: column;}
+  div.landing_subscribe_container div.landing_subscribe_cover h2,div.landing_advertise_container div.landing_advertise_cover div.landing_advertise_content div.advert_info h3,
+  div.landing_about_container div.landing_about_cover section.about_content h2{font-size: 22px;}
+  div.landing_about_container div.landing_about_cover section.about_content p{font-size: 11px;}
+  div.landing_about_container div.landing_about_cover section.about_content li p{font-size: 9px;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+div.about_main_container{
+  width: 100%;
+  height: auto;
+  padding: 50px 0px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+div.about_main_container div.about_main_cover{
+  width: 90%;
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+
+}
+div.about_main_container div.about_main_cover h1{
+  font-size: 50px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.9);
+  width: 1000px;
+  height: auto;
+  line-height: 80px;
+  text-align: center;
+}
+div.about_main_container div.about_main_cover h1 span{
+  font-size: 15px;
+  color: rgb(31, 107, 217);
+}
+div.about_main_container div.about_main_cover p{
+  font-size: 15px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.7);
+  width: 1000px;
+  height: auto;
+  line-height: 30px;
+  text-align: center;
+}
+
+
+div.about_main_container div.about_main_cover div.about_main_image_contain{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  overflow: hidden;
+  padding: 20px 0px;
+}
+
+div.about_main_container div.about_main_cover div.about_main_image_contain div.image_cover{
+  width: calc(33% - 20px);
+  height: 400px;
+  overflow: hidden;
+  background-color: rgba(125, 125, 125, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  position: relative;
+  z-index: 2;
+}
+div.about_main_container div.about_main_cover div.about_main_image_contain div.image_cover img{
+  width: 150%;
+   z-index: 2;
+}
+div.about_main_container div.about_main_cover div.about_main_image_contain div.image_cover.width{
+  width: 100%;
+}
+
+
+
+
+
+
+div.about_main_container div.about_main_cover div.about_main_image_contain div.image_cover div.sample_button_contain {
+  width: 190px;
+  height: 80px;
+  z-index: 2;
+  background-color: white;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* top: 0px; */
+  bottom: 0px;
+  right: 0px;
+  border-radius: 35px 0px 0px 0px;
+}
+div.about_main_container div.about_main_cover div.about_main_image_contain div.image_cover.width div.sample_button_contain{
+  width: 250px;
+}
+
+
+div.about_main_container div.about_main_cover div.about_main_image_contain div.image_cover div.sample_button_contain div.button_cover {
+  width: calc(90% - 15px);
+  height: 50px;
+  border-radius: 40px;
+  background-color: rgb(31, 31, 31);
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  /* gap: 10px; */
+  padding: 0px 6px;
+}
+
+div.about_main_container div.about_main_cover div.about_main_image_contain div.image_cover div.sample_button_contain div.button_cover button {
+  width: 42px;
+  height: 42px;
+  background-color: white;
+  border: none;
+  border-radius: 40px;
+  color: rgb(31, 31, 31);
+  font-size: 17px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+}
+
+div.about_main_container div.about_main_cover div.about_main_image_contain div.image_cover div.sample_button_contain div.button_cover p {
+  width: calc(100% - 60px);
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+div.contact_form_container{
+  width: 100%;
+  height: auto;
+  padding: 100px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+div.contact_form_container div.contact_form_cover{
+  width: 90%;
+  height: auto;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  overflow: hidden;
+  gap: 5%;
+}
+div.contact_form_container div.contact_form_cover section.contact_info{
+  width: 400px;
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+div.contact_form_container div.contact_form_cover section.contact_info h3{
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 70px;
+  width: 100%;
+  color: rgba(0, 0, 0, 0.7);
+
+}
+
+
+
+
+
+
+
+div.contact_form_container div.contact_form_cover section.contact_form{
+  width: calc(95% - 400px);
+  height: auto;
+  padding: 50px 0px 100px;
+  background-color: rgba(125, 125, 125, 0.1);
+  border-radius: 30px ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+div.contact_form_container div.contact_form_cover section.contact_form form{
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+div.contact_form_container div.contact_form_cover section.contact_form form div.input_cover{
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  gap: 5%;
+}
+div.contact_form_container div.contact_form_cover section.contact_form form div.input_cover div.input{
+  padding: 10px 0px;
+  
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+div.contact_form_container div.contact_form_cover section.contact_form form div.input_cover div.input.half{
+  width: 45%;
+}
+
+div.contact_form_container div.contact_form_cover section.contact_form form input{
+  width: calc(100% - 40px);
+  height: auto;
+  padding: 10px 20px ;
+  font-size: 15px;
+  font-weight: 600;
+  background-color: white;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+
+}
+div.contact_form_container div.contact_form_cover section.contact_form form textarea{
+  width: calc(100% - 40px);
+  height: 150px;
+  outline: none;
+  border: none;
+  padding: 10px 20px;
+  background-color: white;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 10px;
+}
+
+
+
+div.contact_form_container div.contact_form_cover section.contact_form div.sample_button_contain {
+  width: 190px;
+  height: 80px;
+  z-index: 2;
+  background-color: white;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* top: 0px; */
+  bottom: 0px;
+  right: 0px;
+  border-radius: 35px 0px 0px 0px;
+}
+/* div.contact_form_container div.contact_form_cover section.contact_form div.sample_button_contain{
+  width: 250px;
+} */
+
+
+div.contact_form_container div.contact_form_cover section.contact_form div.sample_button_contain div.button_cover {
+  width: calc(90% - 15px);
+  height: 50px;
+  border-radius: 40px;
+  background-color: rgb(31, 31, 31);
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  /* gap: 10px; */
+  padding: 0px 6px;
+}
+
+div.contact_form_container div.contact_form_cover section.contact_form div.sample_button_contain div.button_cover button {
+  width: 42px;
+  height: 42px;
+  background-color: white;
+  border: none;
+  border-radius: 40px;
+  color: rgb(31, 31, 31);
+  font-size: 17px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+}
+
+div.contact_form_container div.contact_form_cover section.contact_form div.sample_button_contain div.button_cover p {
+  width: calc(100% - 60px);
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+}
+
+
+
+
+
+@media screen and (max-width:1000px){
+  div.about_main_container div.about_main_cover h1,div.contact_form_container div.contact_form_cover section.contact_info h3{width: 100%;font-size: 30px;}
+  div.about_main_container div.about_main_cover p{width: 100%;font-size: 12px;}
+  div.contact_form_container div.contact_form_cover{flex-direction: column;}
+  div.contact_form_container div.contact_form_cover section.contact_info,div.contact_form_container div.contact_form_cover section.contact_form{width: 100%;}
+  
+}
+@media screen and (max-width:900px){
+  div.about_main_container div.about_main_cover div.about_main_image_contain div.image_cover.width img{width: auto;height: 450px;}
+  div.about_main_container div.about_main_cover div.about_main_image_contain {flex-direction: column;}
+  div.about_main_container div.about_main_cover div.about_main_image_contain div.image_cover{width: 100%;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* this is for the product page  */
+
+
+div.product_main_container{
+ width: 100%;
+ height: auto;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin-top: 60px;
+}
+div.product_main_container div.product_main_cover{
+  width: 90%;
+  height: auto;
+  padding: 50px 0px;
+  justify-content: space-between;
+  align-items: start;
+  display: flex;
+  gap: 50px;
+}
+div.product_main_container div.product_main_cover section.product_filter{
+  width: 300px;
+  border-radius: 20px;
+  height: auto;
+  box-shadow: 2px 5px 10px 2px rgba(125, 125, 125, 0.1);
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0px;
+}
+div.product_main_container div.product_main_cover section.product_filter div.pro_filter_contain{
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+div.product_main_container div.product_main_cover section.product_filter div.pro_filter_contain h3{
+  width: 100%;
+  padding: 15px 0px;
+  border-bottom: 1px solid rgba(125, 125, 125, 0.2);
+  font-size: 18px;
+  font-weight: 600;
+  justify-content: space-between;
+  align-items: center;
+  display: none;
+  color: rgba(0, 0, 0, 0.8);
+}
+div.product_main_container div.product_main_cover section.product_filter div.pro_filter_contain h3 button{
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+div.product_main_container div.product_main_cover section.product_filter div.pro_filter_contain h3 button svg{
+  font-size: 20px;
+}
+div.product_main_container div.product_main_cover section.product_filter div.pro_filter_contain h4{
+  width: 100%;
+  justify-content: left;
+  align-items: center;
+  display: flex;
+  height: auto;
+  padding: 5px 0px;
+  font-size: 17px;
+  font-weight: 500;
+  gap: 10px;
+  color: rgb(31, 107, 217);
+}
+div.product_main_container div.product_main_cover section.product_filter div.pro_filter_contain h4 svg{
+  color: rgb(31, 107, 217);
+  font-size: 20px;
+}
+div.product_main_container div.product_main_cover section.product_filter div.pro_filter_contain div.filter_content{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: auto;
+}
+
+div.product_main_container div.product_main_cover section.product_filter div.pro_filter_contain div.filter_content label{
+  font-size: 15px;
+  font-weight: 600;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  color: rgba(0, 0, 0, 0.7);
+}
+div.product_main_container div.product_main_cover section.product_filter div.pro_filter_contain div.filter_content label input.checkbox{
+  width: 13px;
+  height: 13px;
+  margin: 0px 15px;
+  background-color: rgba(125, 125, 125, 0.2);
+  border: 1px solid  rgba(125, 125, 125, 0.2);
+}
+div.product_main_container div.product_main_cover section.product_filter div.pro_filter_contain div.filter_content input{
+  width: 100%;
+  height: 15px;
+}
+div.product_main_container div.product_main_cover section.product_filter div.pro_filter_contain div.filter_content div.amount span{
+  font-size: 13px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.7);
+}
+div.product_main_container div.product_main_cover section.product_filter div.pro_filter_contain div.button{
+  width: 100%;
+  height: auto;
+  padding: 10px 0px;
+}
+div.product_main_container div.product_main_cover section.product_filter div.pro_filter_contain div.button button{
+  width: 100%;
+  height: auto;
+  padding: 10px 0px;
+  border: 1px solid rgb(31, 107, 217);
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(31, 107, 217);
+  font-size: 15px;
+  font-weight: 600;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+div.product_main_container div.product_main_cover section.product_filter div.pro_filter_contain div.button button:hover{
+  background-color: rgb(31, 107, 217);
+  color: white;
+}
+div.product_main_container div.product_main_cover section.product_filter div.pro_filter_contain div.button button svg{
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+
+
+
+
+
+
+
+div.product_main_container div.product_main_cover section.product_card_container{
+  width: calc(100% - 350px);
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+div.product_main_container div.product_main_cover section.product_card_container div.product_banner_container{
+  width: 90%;
+  height: auto;
+  border-radius: 30px;
+  box-shadow: 2px 5px 10px 2px rgba(125, 125, 125, 0.1);
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  padding: 50px 5%;
+  background-image: linear-gradient(to right, rgb(31, 107, 217) 50%, rgb(165, 203, 255));
+}
+div.product_main_container div.product_main_cover section.product_card_container div.product_banner_container div.banner_content{
+   width: calc(100% - 320px);
+   height: auto;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+
+}
+div.product_main_container div.product_main_cover section.product_card_container div.product_banner_container div.banner_content p{
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 10px 10px;
+  font-size: 14px;
+  font-weight: 500;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 180px;
+  border-radius: 20px;
+  color: white;
+}
+div.product_main_container div.product_main_cover section.product_card_container div.product_banner_container div.banner_content p svg{
+  font-size: 18px;
+  margin-right: 5px;
+}
+div.product_main_container div.product_main_cover section.product_card_container div.product_banner_container div.banner_content h4{
+  font-size: 22px;
+  font-weight: 600;
+  color: white;
+  width: 100%;
+  line-height: 35px;
+}
+div.product_main_container div.product_main_cover section.product_card_container div.product_banner_container div.banner_content h4 span{
+  font-size: 13px;
+}
+div.product_main_container div.product_main_cover section.product_card_container div.product_banner_container div.banner_content div.button{
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+div.product_main_container div.product_main_cover section.product_card_container div.product_banner_container div.banner_content div.button button{
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: none;
+  background-color: white;
+  font-size: 15px;
+  font-weight: 600;
+  color: rgb(31, 107, 217);
+
+}
+div.product_main_container div.product_main_cover section.product_card_container div.product_banner_container div.banner_content div.button button:hover{
+  background-color: rgb(31, 107, 217);
+  color: white;
+}
+
+
+
+
+div.product_main_container div.product_main_cover section.product_card_container div.product_banner_container div.banner_icon{
+  width: 300px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+div.product_main_container div.product_main_cover section.product_card_container div.product_banner_container div.banner_icon div.icon_contain{
+  width: 180px;
+  height: auto;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  color: white;
+}
+div.product_main_container div.product_main_cover section.product_card_container div.product_banner_container div.banner_icon div.icon_contain svg{
+  font-size: 20px;
+}
+div.product_main_container div.product_main_cover section.product_card_container div.product_banner_container div.banner_icon div.icon_contain h5{
+  font-size: 16px;
+  font-weight: 600;
+  width: 100%;
+
+}
+div.product_main_container div.product_main_cover section.product_card_container div.product_banner_container div.banner_icon div.icon_contain h5 span{
+  font-size: 12px;
+}
+
+
+
+
+
+
+div.product_main_container div.product_main_cover section.product_card_container div.product_head{
+  width: 90%;
+  padding: 30px 5%;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 2px 5px 10px 2px rgba(125, 125, 125, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+
+}
+div.product_main_container div.product_main_cover section.product_card_container div.product_head h3{
+  font-size: 18px;
+  font-weight: 600;
+  width: calc(100% - 130px);
+  height: auto;
+  line-height: 30px;
+  color: rgba(0, 0, 0, 0.8);
+}
+div.product_main_container div.product_main_cover section.product_card_container div.product_head h3 svg{
+  font-size: 20px;
+  position: relative;
+  top: 3px;
+  margin-right: 5px;
+}
+div.product_main_container div.product_main_cover section.product_card_container div.product_head h3 span{
+  font-size: 13px;
+  color: rgb(31, 107, 217);
+}
+
+div.product_main_container div.product_main_cover section.product_card_container div.product_head button{
+  width: 100px;
+  height: auto;
+  padding: 12px 0px;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid rgb(31, 107, 217);
+  border-radius: 10px;
+  gap: 10px;
+  display: none;
+}
+div.product_main_container div.product_main_cover section.product_card_container div.product_head button:hover{
+  background-color: rgb(31, 107, 217);
+  color: white;
+}
+div.product_main_container div.product_main_cover section.product_card_container div.product_head button svg{
+  font-size: 17px;
+}
+
+
+
+
+
+
+
+div.product_main_container div.product_main_cover section.product_card_container div.product_list_container{
+  display: grid;
+  width: 100%;
+  height: auto;
+  justify-content: start;
+  align-items: start;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+
+
+
+
+
+div.product_main_container div.product_main_cover section.product_card_container div.product_list_container div.card_container{
+  height: auto;
+  flex-grow: 1;
+  overflow: hidden;
+  background-color: rgba(125, 125, 125, 0.1);
+  border-radius: 30px;
+  /* padding-bottom: 15px; */
+  display: flex;
+  flex-direction: column;
+}
+div.product_main_container div.product_main_cover section.product_card_container div.product_list_container div.card_container div.card_image{
+  width: 100%;
+  height: 200px;
+  /* min-height: 200px; */
+  /* background-color: rgba(125, 125, 125, 0.1); */
+  overflow: hidden;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.product_main_container div.product_main_cover section.product_card_container div.product_list_container div.card_container div.card_content{
+  width: 100%;
+  height: 60px;
+  display: block;
+}
+div.product_main_container div.product_main_cover section.product_card_container div.product_list_container div.card_container div.card_content div.card_info_arrange{
+  width: 100%;
+  height: 60px;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+div.product_main_container div.product_main_cover section.product_card_container div.product_list_container div.card_container div.card_content div.card_info{
+  width: calc(100% - 100px);
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px ;
+  height: auto;
+  display: flex;
+  gap: 10px;
+}
+
+div.product_main_container div.product_main_cover section.product_card_container div.product_list_container div.card_container div.card_content div.card_info h4{
+  font-size: 15px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.8);
+
+}
+div.product_main_container div.product_main_cover section.product_card_container div.product_list_container div.card_container div.card_content div.card_info h5{
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.7);
+  
+}
+
+
+
+
+
+
+div.product_main_container div.product_main_cover section.product_card_container div.product_list_container div.card_container div.card_content div.card_button{
+  width: 70px;
+  height: 60px;
+  background-color: white;
+  border-radius: 25px 0px 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.product_main_container div.product_main_cover section.product_card_container div.product_list_container div.card_container div.card_content div.card_button button{
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: rgb(31, 31, 31);
+  color: white;
+  border: none;
+  overflow: hidden;
+  font-size: 18px;
+  border-radius: 30px;
+}
+
+
+
+
+@media screen and (max-width:1250px){
+  div.product_main_container div.product_main_cover section.product_filter{ height: 100%; width: 350px;border-radius: 0px;}
+  div.product_main_container div.product_main_cover section.product_card_container{width: 100%;}
+  div.product_dark_background{position: fixed; top: 0; z-index: 1000; background-color: rgba(0, 0, 0, 0.2); width: 100%;height: 100%; left: 0px;}
+  div.product_main_container div.product_main_cover section.product_card_container div.product_head button{display: block;}
+  div.product_main_container div.product_main_cover section.product_filter div.pro_filter_contain h3{display: flex;}
+}
+@media screen and (max-width:1000px){
+  div.product_main_container div.product_main_cover section.product_card_container div.product_list_container{grid-template-columns: 1fr 1fr;}
+  div.product_main_container div.product_main_cover section.product_card_container div.product_banner_container{flex-direction: column;}
+  div.product_main_container div.product_main_cover section.product_card_container div.product_banner_container div.banner_content h4{font-size: 20px;}
+  div.product_main_container div.product_main_cover section.product_card_container div.product_banner_container div.banner_content {width: 100%;}
+
+}
+@media screen and (max-width:700px){
+  div.product_main_container div.product_main_cover section.product_card_container div.product_banner_container div.banner_content h4{font-size: 18px;}
+  div.product_main_container div.product_main_cover section.product_card_container div.product_banner_container div.banner_content p{font-size: 10px;}
+  div.product_main_container div.product_main_cover section.product_card_container div.product_banner_container div.banner_icon div.icon_contain {width: 100%;margin: 10px 0px;}
+  div.product_main_container div.product_main_cover section.product_card_container div.product_banner_container div.banner_icon div.icon_contain h5{font-size: 13px;}
+  div.product_main_container div.product_main_cover section.product_card_container div.product_banner_container div.banner_icon div.icon_contain h5 span{font-size: 8px;}
+}
+@media screen and (max-width:550px){
+  div.product_main_container div.product_main_cover section.product_card_container div.product_list_container{grid-template-columns: 1fr;}
+  div.product_main_container div.product_main_cover section.product_card_container div.product_banner_container div.banner_content h4{font-size: 15px;}
+  div.product_main_container div.product_main_cover section.product_card_container div.product_banner_container div.banner_content p{font-size: 8px;}
 }

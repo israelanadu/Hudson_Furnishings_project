@@ -1,0 +1,92 @@
+[
+  {
+    "title": "Modern velvet sofa",
+    "price": 1299.00,
+    "description": "Luxurious velvet sofa with deep seating and elegant design. Perfect for modern living spaces.",
+    "category": "sofa",
+    "image": "/image/sofa 1.jpg",
+    "inStock": 5,
+    "newArrival": true
+  },
+  {
+    "title": "Dining Chair Set",
+    "price": 382.50,
+    "description": "Set of 4 ergonomic dining chairs with cushioned seats and sturdy wooden legs.",
+    "category": "table",
+    "image": "/image/table 3.jpg",
+    "inStock": 0,
+    "newArrival": false
+  },
+  {
+    "title": "Marble Coffee Table",
+    "price": 599.00,
+    "description": "Elegant marble top coffee table with gold metal frame. A statement piece for any living room.",
+    "category": "table",
+    "image": "/image/table 2.jpg",
+    "inStock": 3,
+    "newArrival": true
+  },
+  {
+    "title": "King Sized Platform Bed",
+    "price": 799.00,
+    "description": "Contemporary platform bed with upholstered headboard. Includes storage drawers underneath.",
+    "category": "bedframe",
+    "image": "/image/bedframe 1.jpg",
+    "inStock": 0,
+    "newArrival": false
+  },
+  {
+    "title": "Wooden wardrobe",
+    "price": 349.99,
+    "description": "Classic dresser with six spacious drawers and smooth-glide mechanism.",
+    "category": "cupboard",
+    "image": "/image/cupboard 3.jpg",
+    "inStock": 7,
+    "newArrival": false
+  },
+  {
+    "title": "Wooden bookshelf",
+    "price": 199.00,
+    "description": "5-tier wooden bookshelf with open design. Perfect for displaying books and decorative items.",
+    "category": "cupboard",
+    "image": "/image/cupboard 2.jpg",
+    "inStock": 0,
+    "newArrival": true
+  },
+  {
+    "title": "Yaheetech Queen Bed frame",
+    "price": 1420.00,
+    "description": "Yaheetech Queen Bed Frame Upholstered Platform Bed with Wing Side/Wooden Slat Support/Tufted Headboard with Wing Side/Mattress Foundation/No Box Spring Needed, Light Gray Queen Bed.",
+    "category": "bedframe",
+    "image": "/image/bedframe 2.jpg",
+    "inStock": 2,
+    "newArrival": false
+  },
+  {
+    "title": "L-shaped Sectional Sofa",
+    "price": 1849.99,
+    "description": "Large L-shaped sectional sofa with reversible chaise. Perfect for family gatherings.",
+    "category": "sofa",
+    "image": "/image/sofa 3.jpg",
+    "inStock": 4,
+    "newArrival": true
+  },
+  {
+    "title": "Luxury Armchair",
+    "price": 549.99,
+    "description": "Plush velvet armchair with curved arms and wooden legs. Adds comfort and style to any room.",
+    "category": "sofa",
+    "image": "/image/sofa 6.jpg",
+    "inStock": 0,
+    "newArrival": false
+  },
+  {
+    "title": "Accent Side Table",
+    "price": 649.99,
+    "description": "Compact side table with unique design. Perfect for small spaces and as an accent piece.",
+    "category": "table",
+    "image": "/image/table 4.jpg",
+    "inStock": 8,
+    "newArrival": true
+  }
+]
