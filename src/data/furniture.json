@@ -88,5 +88,95 @@
     "image": "/image/table 4.jpg",
     "inStock": 8,
     "newArrival": true
+  },
+  {
+    "title": "Mid-century loveseat",
+    "price": 1199.00,
+    "description": "Retro-inspired design with wooden legs and cozy fabric for smaller living spaces",
+    "category": "sofa",
+    "image": "/image/sofa 5.jpg",
+    "inStock": 3,
+    "newArrival": false
+  },
+  {
+    "title": "Extended Dining Table",
+    "price": 412.50,
+    "description": "Transforms easily to accomodate guests, blending practically with timeless design",
+    "category": "table",
+    "image": "/image/table 7.jpg",
+    "inStock": 1,
+    "newArrival": true
+  },
+  {
+    "title": "Glass Top Console Table",
+    "price": 319.00,
+    "description": "Sleek and airy design with tempered glass - great for entryways or behind sofas",
+    "category": "table",
+    "image": "/image/table 17.jpg",
+    "inStock": 2,
+    "newArrival": false
+  },
+  {
+    "title": "Tufted headboard Bed",
+    "price": 812.00,
+    "description": "Elegant comfort meets luxury with a soft upholstered headboard and timeless button-tufted detailing",
+    "category": "bedframe",
+    "image": "/image/bedframe 3.jpg",
+    "inStock": 3,
+    "newArrival": true
+  },
+  {
+    "title": "Cpmpact shoe rack",
+    "price": 200.99,
+    "description": "Keep your entryway tidy with this multi-tiered rack that holds up to 12 pairs of shoes",
+    "category": "cupboard",
+    "image": "/image/cupboard 6.jpg",
+    "inStock": 0,
+    "newArrival": true
+  },
+  {
+    "title": "Floating wall shelf",
+    "price": 310.00,
+    "description": "Minimalist design that mounts seamlessly for books, plants and decor pieces",
+    "category": "cupboard",
+    "image": "/image/cupboard 1.jpg",
+    "inStock": 3,
+    "newArrival": false
+  },
+  {
+    "title": "Cpmpact studio sofa",
+    "price": 1120.00,
+    "description": "Space-saving and stylish, this sofa fits perfectly in apartments or small living areas",
+    "category": "sofa",
+    "image": "/image/sofa 2.jpg",
+    "inStock": 4,
+    "newArrival": true
+  },
+  {
+    "title": "Minimalist study desk",
+    "price": 1049.99,
+    "description": "Clean lines and a spacious surface for productivity and focus",
+    "category": "table",
+    "image": "/image/table 18.jpg",
+    "inStock": 1,
+    "newArrival": false
+  },
+  {
+    "title": "Upholstered storage bed",
+    "price": 429.99,
+    "description": "Combines comfort and function with hidden under-bed drawers for extra storage space.",
+    "category": "bedframe",
+    "image": "/image/table 20.jpg",
+    "inStock": 3,
+    "newArrival": true
+  },
+  {
+    "title": "Oak wardrobe closet",
+    "price": 379.99,
+    "description": "Spacious hanging and shelving sections crafted from solid oak for natural beauty and strength.",
+    "category": "cupboard",
+    "image": "/image/cupboard 4.jpg",
+    "inStock": 2,
+    "newArrival": false
   }
 ]

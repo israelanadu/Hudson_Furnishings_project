@@ -33,7 +33,7 @@ button {
 header {
   width: 100%;
   height: 60px;
-  overflow: hidden;
+  /* overflow: hidden; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,7 +48,7 @@ header {
 header div.header_container {
   width: 90%;
   height: 50px;
-  overflow: hidden;
+  /* overflow: hidden; */
   justify-content: space-between;
   align-items: center;
   display: flex;
@@ -117,8 +117,34 @@ header div.header_container section.header_cover button span {
   font-weight: 600;
   color: rgba(0, 0, 0, 0.6);
 }
-
-
+header div.header_container section.header_cover div.button{
+  width: auto;
+  height: auto;
+  position: relative;
+  display: none;
+}
+header div.header_container section.header_cover div.button section.dropdown_contain{
+  position: absolute;
+  margin-left: -100px;
+  width: 150px;
+  height: auto;
+  padding: 10px 0px;
+  /* border: 1px solid red; */
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 1px 5px 10px 2px rgba(125, 125, 125, 0.1);
+}
+header div.header_container section.header_cover div.button section.dropdown_contain div{
+  width: 90%;
+  height: auto;
+  flex-direction: column;
+  display: flex;
+  gap: 10px;
+  overflow: hidden;
+}
 
 
 
@@ -1053,7 +1079,9 @@ footer div.footer_container p{
   div.landing_about_container div.landing_about_cover section.about_content p{font-size: 13px;}
   div.landing_about_container div.landing_about_cover section.about_content li{font-size: 10px;}
   header div.header_container section.header_cover.menu{display: none;}
-}
+  header div.header_container section.header_cover div.button{display: block;}
+  div.landing_advertise_container div.landing_advertise_cover img{width: auto;height: 550px;}
+} 
 
 
 @media screen and (max-width:600px){
